@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>formularios</title>
+</head>
+<style>
+	body {
+		display: grid;
+		width: 100%;
+		justify-content: center;
+
+	}
+
+	form {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		gap: 5px;
+		background-color: #B6D1E0;
+		padding: 10px;
+		border: solid 1px black;
+		font-size: 20px;
+	}
+
+	input {
+		height: 30px;
+	}
+</style>
+
+<body>
+
+	<h1>Formularios en HMTL</h1>
+	<form action="#" method="get">
+
+
+
+		<label for="idNombre">NOMBRE:</label>
+		<input type="text" id="idApellido" placeholder="Escriba su nombre...">
+
+		<label for="idApellido">Apellido</label>
+		<input type="text" id="idApellido" placeholder="Escriba su Apellido...">
+
+		<label for="">Email</label>
+		<input type="email" id="idEmail" placeholder="ejemplo@dominio.com">
+
+		<label for="IdPassword">IdPassword</label>
+		<input type="password" id="Password" placeholder="########">
+
+		<label for="isIdentificación">Número de Identificación</label>
+		<input type="number" id="identificación" placeholder="Ingrese el N° de su DNI">
+
+		<label for="idFechadeNaciiento">Fecha de Nacimiento</label>
+		<input type="number" id="idFechadeNaciiento" placeholder="Ingrese su fecha de nacimiento">
+
+		<label for="idTelefono">Número de Teléfono</label>
+		<input type="number" id="idTelefono" placeholder="Ingrese su N° de Teléfono">
+
+		<label for="">Sexo</label>
+		<section><input type="radio"><span>Masculino</span>
+			<input type="radio"><span>Femenino</span>
+		</section>
+
+		<label for="">ESTADO CIVIL</label>
+		<Select name="Select Estado Civil" id="idEstadoCivil">
+			<option value="0">Seleccione</option>
+			<option value="1">Casado</option>
+			<option value="2">Soltero</option>
+			<option value="3">Union Libre</option>
+			<option value="4">Separado</option>
+			<option value="5">Viudo</option>
+			<option value="6">Viudo</option>
+		</Select>
+
+
+		<label for="idFormacion">Formacion</label>
+		<select name="selectFormacion" id="idFormacion" multiple>
+			<option value="1">Secundaria</option>
+			<option value="2">Media</option>
+			<option value="3">Tecnicatura</option>
+			<option value="4">Licenciatura</option>
+
+		</Select>
+
+		<label for="Formacion"></label>
+		<section>
+			<input type="checkbox" value="Tecnico"><span>Tecnico</span>
+			<input type="checkbox" value="Tecnologo"><span>Tecnologo</span>
+			<input type="checkbox" value="Especialista"><span>Especialista</span>
+		</section>
+
+		<label for="">SELECCIONAR FOTO</label>
+		<input type="file">
+
+		<label for="idComentarios">Comentarios</label>
+		<textarea type="idComentarios" placeholder="Escriba sus sugerencias..." rows="10" cols="1" textarea></textarea>
+
+	</form>
+
+	<br>
+
+
+	<form action="#" method="post">
+		<label for="">USUARIO</label>
+		<input type="text" placeholder="Ingrese su usuario...">
+		<label for="">PASSWORD</label>
+		<input type="password" placeholder="Ingrese su contraseña">
+		<input type="submit" value="ENVIAR">
+		<input type="reset" value="CANCELAR">
+	</form>
+
+	<br>
+
+	<form action="#" method="post">
+		<label for="">USUARIO</label>
+		<input type="text" placeholder="Ingrese su usuario...">
+		<label for="">PASSWORD</label>
+		<input type="password" placeholder="Ingrese su contraseña">
+		<input type="button" value="CLICK" onclick="alert('Hola, soy un botón!')">
+		<input type="reset" value="CANCELAR">
+
+
+	</form>
+
+
+</body>
+
+</html>

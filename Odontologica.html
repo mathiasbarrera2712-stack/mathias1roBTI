@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda tu cita</title>
+</head>
+<style>
+    body {
+        display: grid;
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 5px;
+        background-color: #B6D1E0;
+        padding: 10px;
+        border: solid 1px black;
+        font-size: 20px;
+    }
+
+    input {
+        height: 30px;
+    }
+</style>
+
+<body>
+    <form action="">
+
+        <label for="">DNI</label><input type="number">
+
+        <label for="">SELECCIONAR FOTO</label>
+        <input type="file">
+
+
+        <label for="idNombre">NOMBRE:</label>
+        <input type="text" id="idApellido" placeholder="Escriba su nombre...">
+
+        <label for="idApellido">Apellido</label>
+        <input type="text" id="idApellido" placeholder="Escriba su Apellido...">
+
+        <label for="">Email</label>
+        <input type="email" id="idEmail" placeholder="ejemplo@dominio.com">
+
+        <label for="IdPassword">IdPassword</label>
+        <input type="password" id="Password" placeholder="########">
+
+        <label for="isIdentificación">Número de Identificación</label>
+        <input type="number" id="identificación" placeholder="Ingrese el N° de su DNI">
+
+        <label for="idFechadeNaciiento">Fecha de Nacimiento</label>
+        <input type="number" id="idFechadeNaciiento" placeholder="Ingrese su fecha de nacimiento">
+
+        <label for="idTelefono">Número de Teléfono</label>
+        <input type="number" id="idTelefono" placeholder="Ingrese su N° de Teléfono">
+
+
+        <label for="">Sala</label>
+        <select name="Sala que ingresa el paciente" id="idSala">
+            <option value="0">Emergencia A</option>
+            <option value="1">Sala A</option>
+            <option value="2">Laboratorio</option>
+            <option value="3">Rayos X</option>
+            <option value="4">Hospitalización</option>
+        </select>
+
+        <label for="">Dirección</label>
+        <input type="text" id="idDirección" placeholder="Ingrese su Dirección">
+
+        <label for="">Sexo</label>
+        <section><input type="radio"><span>Masculino</span>
+            <input type="radio"><span>Femenino</span>
+        </section>
+
+        <label for="">Estado Civil</label>
+        <select name="Estado Civil" id="idEstadoCivil">
+            <option value="0">Seleccione</option>
+            <option value="1">Casado</option>
+            <option value="2">Soltero</option>
+            <option value="3">Union Libre</option>
+            <option value="4">Separado</option>
+            <option value="5">Viudo</option>
+            <option value="6">Viudo</option>
+        </select>
+
+        <label for="">País</label>
+        <select name="Nacionalidad" id="idPaís">
+            <option value="0">Colombia</option>
+            <option value="1">Venezuela</option>
+            <option value="2">Ecuador</option>
+            <option value="3">Perú</option>
+            <option value="4">Panamá</option>
+            <option value="5">Brasil</option>
+        </select>
+
+        <label for="idFormacion">Formacion</label>
+        <select name="selectFormacion" id="idFormacion">
+            <option value="1">Secundaria</option>
+            <option value="2">Media</option>
+            <option value="3">Tecnicatura</option>
+            <option value="4">Licenciatura</option>
+        </Select>
+
+        <label for="">Grupo sanguíneo</label>
+        <select name="selectGrupo sanguíneo" id="idGrupoSanguíneo">
+            <option value="0">A+</option>
+            <option value="1">A-</option>
+            <option value="2">B+</option>
+            <option value="3">B-</option>
+            <option value="4">O+</option>
+            <option value="5">O-</option>
+            <option value="6">AB+</option>
+            <option value="7">AB-</option>
+        </select>
+
+
+        <label for="">VIH</label>
+        <section><input type="radio"><span>Sí</span>
+            <input type="radio"><span>No</span>
+        </section>
+
+        <label for="">Nombre del Representante</label>
+        <input type="" placeholder="Escriba el nombre de su Representante">
+
+        <label for="">Emergencia</label>
+        <input type="" placeholder="Escriba  su Emergencia">
+
+        <label for="">Departamento</label>
+        <input type="text" placeholder="Escriba su Departamento">
+
+        <label for="">Distrito</label>
+        <input type="" placeholder="Escriba su Distrito">
+
+        <label for="">Ocupación</label>
+        <input type="" placeholder="Escriba su Ocupación">
+
+        <label for="">Peso</label>
+        <input type="" placeholder="Escriba su Peso">
+
+        <label for="">Talla</label>
+        <input type="" placeholder="Escriba su Talla">
+
+        <label for="">Alérgico</label>
+        <input type="" placeholder="Escriba su Alergía">
+
+        <label for="">Medicamento que toma actualmente</label>
+        <input type="" placeholder="Escriba el medicamento que toma actualmente">
+
+        <label for="">Enfermedad que tiene</label>
+        <input type="" placeholder="Escriba la enfermedad que tiene">
+        <input type="submit" value="REGISTRAR">
+        <input type="reset" value="LIMPIAR">
+
+</body>
+
+</html>
